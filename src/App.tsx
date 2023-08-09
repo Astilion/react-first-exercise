@@ -1,7 +1,8 @@
-import componentsImage from './assets/images/components.png';
 import stateImage from './assets/images/state.png';
 import eventsImage from './assets/images/events.png';
-import Header from './components/Concepts/Header';
+import Header from './components/Header';
+import componentsImage from './assets/images/components.png';
+import Concepts from './components/Concepts/Concepts';
 
 const concepts = [
   {
@@ -28,13 +29,7 @@ const App = () => {
   return (
     <div>
       <Header/>
-      <ul id="concepts">
-        <li className="concept">
-          <img src="TODO: IMAGE" alt="TODO: TITLE" />
-          <h2>TODO: TITLE</h2>
-          <p>TODO: DESCRIPTION</p>
-        </li>
-      </ul>
+      <Concepts items={concepts}/>
     </div>
   );
 }
