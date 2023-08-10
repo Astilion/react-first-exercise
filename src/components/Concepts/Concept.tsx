@@ -1,9 +1,13 @@
-import componentsImage from '../../assets/images/components.png';
+export interface ConceptProps {
+  image: string;
+  title: string;
+  description: string;
+}
 
-const Concept = (props) => {
+const Concept = (props:ConceptProps) => {
     return (
         <li className="concept">
-          <img src={componentsImage} alt="TODO: TITLE" />
+          <img src={props.image} alt="TODO: TITLE" />
           <h2>{props.title}</h2>
           <p>{props.description}</p>
         </li>

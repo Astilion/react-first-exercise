@@ -1,6 +1,9 @@
-import Concept from "./Concept";
+import Concept, { ConceptProps } from "./Concept";
+interface ConceptsProps {
+    items: ConceptProps[]
+}
 
-const Concepts = (props) => {
+const Concepts = (props:ConceptsProps) => {
     return (
         <ul className="concepts" id="concepts">
             <Concept title={props.items[0].title} image={props.items[0].image} description={props.items[0].description}/>
