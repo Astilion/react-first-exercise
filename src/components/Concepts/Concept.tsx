@@ -1,3 +1,5 @@
+import Card from '../UI/Card'
+
 export interface ConceptProps {
   image: string;
   title: string;
@@ -6,11 +8,11 @@ export interface ConceptProps {
 
 const Concept = (props:ConceptProps) => {
     return (
-        <li className="concept">
+        <Card className="concept">
           <img src={props.image} alt="TODO: TITLE" />
           <h2>{props.title}</h2>
           <p>{props.description}</p>
-        </li>
+        </Card>
     )
 }
 
